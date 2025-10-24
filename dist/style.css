@@ -1,29 +1,84 @@
-h1{
-  border-color: #d3e644;
-  border-style: dashed;
+body {
+  font-family: "Trebuchet MS", sans-serif;
+  background: linear-gradient(135deg, #3b7a57, #8fbc8f);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: 20px;
+.login-container {
+  background-color: #fff8e7;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  padding: 30px;
+  width: 320px;
+  text-align: center;
+  border: 3px solid #3b7a57;
 }
 
-th, td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
+h1 {
+  color: #2e4e3e;
+  margin-bottom: 5px;
 }
 
-th {
-  background-color: #f2f2f2;
+.login-dino {
+  display: block;
+  width: 140px;
+  margin: 10px auto 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #355e3b;
+  font-size: 1.2rem;
+}
+
+label {
+  display: block;
+  margin: 12px 0 4px;
+  font-weight: bold;
+  color: #2e4e3e;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #3b7a57;
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 16px;
+  padding: 10px 25px;
+  background-color: #3b7a57;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #2e4e3e;
+}
+
+#message {
+  margin-top: 15px;
   font-weight: bold;
 }
 
-tbody tr:nth-child(even) {
-  background-color: #f9f9f9;
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
 }
 
-tbody tr:hover {
-  background-color: #e9e9e9;
+.shake {
+  animation: shake 0.4s ease-in-out;
 }
